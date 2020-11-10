@@ -1397,7 +1397,7 @@ gregtech.multiblock.fusion_reactor_mk2.description=核聚变反应堆Mk.II是一
 gregtech.multiblock.fusion_reactor_mk3.description=核聚变反应堆Mk.III是一个用于将元素聚变为更重元素的多方块结构.Mk.III核聚变反应堆只能使用UV能源仓.每个能源仓会给反应堆增加40w的能量缓存。
 gtadditions.multiblock.reactor.tooltip.1=核反应堆和增殖核反应堆使用核能产生热冷却液。
 gtadditions.multiblock.reactor.tooltip.2=接受的冷却液包括以下流体：蒸汽（150℃）、氘（450℃）、钠（800℃）、钠钾合金（900℃）、氟锂钠钾混合物（1800℃）、氟锂铍混合物（1700℃）以及共晶铅铋（1900℃）。
-gtadditions.multiblock.reactor.tooltip.3=核反应堆会消耗输入仓内所有的冷却液，当前所处理的配方温度越高，消耗的冷却液越多。
+gtadditions.multiblock.reactor.tooltip.3=核反应堆会逐步消耗输入仓内所有的冷却液。当前正在处理的配方温度越高，消耗的冷却液就越多。
 gtadditions.multiblock.reactor.tooltip.4=若冷却液不足，反应堆将停止工作。
 gtadditions.multiblock.reactor.tooltip.5=若冷却液过剩，反应堆将超频处理当前配方。
 gtadditions.multiblock.reactor.tooltip.6=核材料可以充当反应堆堆芯以提供更多温度：钍=0，铀=2，钚=10，镅=15，锔=25，锫=35，锎=50，锿=75，镄=100，钔=200
