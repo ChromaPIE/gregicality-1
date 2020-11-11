@@ -1,10 +1,8 @@
 package gregicadditions.item;
 
-import gregicadditions.Gregicality;
-import gregicadditions.materials.SimpleDustMaterial;
+import gregicadditions.utils.GALog;
 import gregtech.api.items.armor.ArmorMetaItem;
 import gregtech.api.items.metaitem.MetaItem;
-import gregtech.api.unification.material.MaterialIconSet;
 import gregtech.common.items.MetaItems;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
@@ -23,8 +21,8 @@ public class GAMetaItems {
     public static MetaItem<?>.MetaValueItem GLASS_FIBER;
     public static MetaItem<?>.MetaValueItem PETRI_DISH;
     public static MetaItem<?>.MetaValueItem COMPRESSED_COKE_CLAY;
-    public static MetaItem<?>.MetaValueItem COMPRESSED_FIRECLAY;
-    public static MetaItem<?>.MetaValueItem FIRECLAY_BRICK;
+    //    public static MetaItem<?>.MetaValueItem COMPRESSED_FIRECLAY;
+//    public static MetaItem<?>.MetaValueItem FIRECLAY_BRICK;
     public static MetaItem<?>.MetaValueItem ENERGY_MODULE;
     public static MetaItem<?>.MetaValueItem ENERGY_CLUSTER;
     public static MetaItem<?>.MetaValueItem MAX_BATTERY;
@@ -247,8 +245,8 @@ public class GAMetaItems {
             fluidHandlerItem.fill(new FluidStack(fluid, 1000), true);
 
         } catch (Exception e) {
-            Gregicality.LOGGER.error("The fluid " + fluid.toString() + " failed to do something with getFilledCell");
-            Gregicality.LOGGER.error(e);
+            GALog.logger.error("The fluid " + fluid.toString() + " failed to do something with getFilledCell");
+            GALog.logger.error(e);
             fluidHandlerItem.fill(new FluidStack(FluidRegistry.WATER, 1000), true);
         }
         fluidCell = fluidHandlerItem.getContainer();
