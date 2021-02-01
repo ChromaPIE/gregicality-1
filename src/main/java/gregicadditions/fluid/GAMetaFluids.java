@@ -45,7 +45,6 @@ public class GAMetaFluids {
 
         for (SimpleFluidMaterial fluidMat : SimpleFluidMaterial.GA_FLUIDS) {
             Fluid fluid = new Fluid(fluidMat.name, MetaFluids.AUTO_GENERATED_FLUID_TEXTURE, MetaFluids.AUTO_GENERATED_FLUID_TEXTURE, fluidMat.rgb);
-            fluid.setTemperature(fluidMat.temperature);
             if (!FluidRegistry.isFluidRegistered(fluid.getName())) {
                 FluidRegistry.registerFluid(fluid);
                 FluidRegistry.addBucketForFluid(fluid);

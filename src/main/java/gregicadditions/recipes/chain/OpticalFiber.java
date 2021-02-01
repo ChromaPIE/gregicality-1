@@ -1,4 +1,4 @@
-package gregicadditions.recipes.chain.optical;
+package gregicadditions.recipes.chain;
 
 import gregicadditions.GAEnums;
 import gregtech.api.recipes.ModHandler;

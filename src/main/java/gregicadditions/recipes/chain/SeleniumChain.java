@@ -4,7 +4,6 @@ import gregtech.api.unification.OreDictUnifier;
 
 import static gregicadditions.GAMaterials.*;
 import static gregtech.api.recipes.RecipeMaps.*;
-import static gregicadditions.recipes.GARecipeMaps.LARGE_CHEMICAL_RECIPES;
 import static gregtech.api.unification.material.Materials.*;
 import static gregtech.api.unification.ore.OrePrefix.*;
 
@@ -41,7 +40,7 @@ public class SeleniumChain {
                 .fluidOutputs(SelenateTellurateMix.getFluid(750))
                 .buildAndRegister();
 
-        LARGE_CHEMICAL_RECIPES.recipeBuilder().duration(350).EUt(1450)
+        CHEMICAL_RECIPES.recipeBuilder().duration(350).EUt(1450)
                 .fluidInputs(SelenateTellurateMix.getFluid(1000))
                 .fluidInputs(SulfuricAcid.getFluid(1000))
                 .fluidOutputs(SelenateSolution.getFluid(1000))
